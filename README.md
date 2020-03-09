@@ -57,8 +57,8 @@ test.save_results_to_file(filename='test-1.output')
 
 This will save the file with a CSV style with the following information:
 
-* `START_TIME` - The time on which the request started (based on the event loop start time)
-* `END_TIME` - The time on which the request finished (based on the event loop start time)
-* `ELAPSED_TIME` - The time it took for this request to finish
-* `SUCCESS_RESPONSE` - Indicates if the response was successful or not
+* request start - the time on which the request started (from the event loop)
+* request id - the id of the request (in this case, followed sequentially)
+* elapsed time - time that took for the request to finish
+* response status - the HTTP response status retrieved for the given request
 
